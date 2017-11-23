@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="thymeleaf-redis-mysql:war">
+    <output-path>$PROJECT_DIR$/thymeleaf-redis-mysql/target</output-path>
+    <root id="archive" name="com.jk-1.4.7.RELEASE.war">
+      <element id="artifact" artifact-name="thymeleaf-redis-mysql:war exploded" />
+    </root>
+  </artifact>
+</component>

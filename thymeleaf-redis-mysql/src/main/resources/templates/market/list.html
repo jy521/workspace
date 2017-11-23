@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>marketList</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>销货</h1>
+<br/><br/>
+<div class="with:80%">
+    <table border="1" cellspacing="0" cellpadding="0"  class="table table-hover">
+        <thead>
+        <tr>
+            <th>单号</th>
+            <th>客户</th>
+            <th>销售日期</th>
+            <th>销售金额</th>
+            <th>登记情况</th>
+            <th>状态</th>
+            <th>预计收款金额</th>
+            <th>预计收款日期</th>
+            <th>预计发货日期</th>
+            <th>发货方式</th>
+            <th>业务员</th>
+            <th>备注</th>
+            <th>修改</th>
+            <th>删除</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="market : ${market}">
+            <th scope="row" th:text="${market.id}">1</th>
+            <td th:text="${market.name}">2</td>
+            <td th:text="${market.marketDate}">3</td>
+            <td th:text="${market.marketMoneys}">4</td>
+            <td th:text="${market.registStatus==1?'未登记':'登记完成'}">5</td>
+            <td th:text="${market.status==1?'审核中':'审核通过'}">6</td>
+            <td th:text="${market.putAmount}">7</td>
+            <td th:text="${market.putDate}">8</td>
+            <td th:text="${market.getDate}">9</td>
+            <td th:text="${market.type==1?'快递':(market.type==2?'顺丰':'自带')}">10</td>
+            <td th:text="${market.userName}">11</td>
+            <td th:text="${market.remarks}">12</td>
+            <td><a th:href="@{/toEdit(id=${market.id})}">edit</a></td>
+            <td><a th:href="@{/delete(id=${market.id})}">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/toAdd" th:href="@{/toAdd}" class="btn btn-info">新增</a>
+    </div>
+</div>
+
+</body>
+</html>

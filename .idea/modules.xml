@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jpa-thymeleaf-curd/springboot-jpa-thymeleaf-curd.iml" filepath="$PROJECT_DIR$/springboot-jpa-thymeleaf-curd/springboot-jpa-thymeleaf-curd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-ssm/springboot-ssm.iml" filepath="$PROJECT_DIR$/springboot-ssm/springboot-ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thymeleaf-redis-mysql/thymeleaf-redis-mysql.iml" filepath="$PROJECT_DIR$/thymeleaf-redis-mysql/thymeleaf-redis-mysql.iml" />
+    </modules>
+  </component>
+</project>
